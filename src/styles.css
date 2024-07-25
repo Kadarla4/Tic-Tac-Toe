@@ -1,0 +1,78 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  width: 300px;
+  display: grid;
+  background-color: rgb(41, 41, 41);
+  grid-template-columns: 1fr 1fr 1fr;
+  border-left: 2px;
+  box-shadow: 3px 4px 4px 4px;
+}
+
+.slots {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(232, 230, 230);
+  border: solid;
+  /* display: flex;
+  justify-content: center;*/
+  position: relative;
+}
+
+.line {
+  align-self: center;
+  height: 0px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: black;
+  transform: rotate(45deg);
+  transition: height 0.5s;
+}
+.line2 {
+  align-self: center;
+  height: 0px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: black;
+  transform: rotate(-45deg);
+  transition: height 0.5s;
+}
+
+.circle {
+  align-self: center;
+  width: 60%;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+
+.Ximg {
+  opacity: 1;
+  position: absolute;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Oimg {
+  opacity: 0;
+  position: absolute;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.choose {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+button {
+  width: 40%;
+}
